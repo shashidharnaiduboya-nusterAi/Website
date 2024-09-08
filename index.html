@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NusterAI - Advanced AI Agents & Agentic Universe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/TextPlugin.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;700&display=swap');
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .gradient-bg {
+            background: linear-gradient(120deg, #e0f7fa, #e8f5e9, #fffde7);
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 12px 36px 0 rgba(31, 38, 135, 0.3);
+        }
+        .text-gradient {
+            background: linear-gradient(45deg, #3b82f6, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="gradient-bg">
+    <header class="fixed w-full bg-white bg-opacity-90 backdrop-blur-md p-4 z-50 shadow-md">
+        <nav class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-gradient">NusterAI</h1>
+            <ul class="flex space-x-6">
+                <li><a href="#home" class="text-gray-700 hover:text-blue-600 transition-all">Home</a></li>
+                <li><a href="#ai-agents" class="text-gray-700 hover:text-blue-600 transition-all">AI Agents</a></li>
+                <li><a href="#services" class="text-gray-700 hover:text-blue-600 transition-all">Services</a></li>
+                <li><a href="#agentic-universe" class="text-gray-700 hover:text-blue-600 transition-all">Agentic Universe</a></li>
+                <li><a href="#contact" class="text-gray-700 hover:text-blue-600 transition-all">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="min-h-screen flex items-center justify-center text-center pt-20">
+            <div class="container mx-auto px-4">
+                <h1 class="text-5xl font-bold mb-6 text-gray-800">
+                    <span class="text-gradient">NusterAI</span>
+                    <span id="changing-text" class="block mt-2">Pioneering the Agentic Universe</span>
+                </h1>
+                <p class="text-xl mb-8 text-gray-600" id="subtitle">Empowering businesses and individuals with advanced, autonomous AI agents for every software domain</p>
+                <a href="#ai-agents" class="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold py-3 px-6 rounded-full transition-all transform hover:scale-105">Explore Our AI Agents</a>
+            </div>
+        </section>
+
+        <section id="ai-agents" class="py-20 bg-gradient-to-r from-blue-50 to-cyan-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center text-gradient">Our Advanced AI Agents</h2>
+                <p class="text-center mb-8 text-gray-600">Our autonomous agents interact with each other, share common memory, and possess cognitive abilities. They're designed with higher accuracy and precision to revolutionize various fields and software domains.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Educational Assistant</h3>
+                        <p class="text-gray-600">Assists students in clearing subject doubts across various domains, explaining concepts in detail.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Python Developer Agent</h3>
+                        <p class="text-gray-600">Dedicated agent for Python development, assisting in coding, debugging, and best practices.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Product Owner Agent</h3>
+                        <p class="text-gray-600">Guides product development, prioritizes features, and aligns teams with business goals.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">HR Manager Agent</h3>
+                        <p class="text-gray-600">Streamlines HR processes, from recruitment to employee engagement and performance management.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Sales Strategic Agent</h3>
+                        <p class="text-gray-600">Analyzes business data, strategizes decisions, implements marketing strategies, and interacts effectively with customers.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Software Domain Agents</h3>
+                        <p class="text-gray-600">Specialized agents for every software domain, providing expert assistance and automation across various technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-gradient-to-r from-cyan-50 to-blue-50">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold mb-8 text-gradient">Our Services</h2>
+                <p class="text-xl mb-12 text-gray-600">NusterAI provides cutting-edge AI solutions across a wide range of industries:</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Financial Services</h3>
+                        <p class="text-gray-600">AI-driven financial analysis, risk assessment, and predictive modeling.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Pharmaceutical Industry</h3>
+                        <p class="text-gray-600">Drug discovery assistance, clinical trial optimization, and market analysis.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Geospatial Analysis</h3>
+                        <p class="text-gray-600">Advanced mapping, location intelligence, and spatial data analysis.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Medical Diagnostics</h3>
+                        <p class="text-gray-600">AI-assisted diagnosis, medical image analysis, and treatment planning.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Investment Strategy</h3>
+                        <p class="text-gray-600">AI-powered market analysis, portfolio optimization, and risk management.</p>
+                    </div>
+                    <div class="glass-card p-6 shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4 text-gray-800">Education Sector</h3>
+                        <p class="text-gray-600">Personalized learning experiences, intelligent tutoring systems, and educational resource optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="agentic-universe" class="py-20 bg-gradient-to-r from-blue-50 to-cyan-50">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-12 text-center text-gradient">NusterAI Agentic Universe</h2>
+                <p class="text-center mb-8 text-gray-600">We're building a comprehensive AI ecosystem where multiple agents collaborate, learn, and evolve together across all software domains.</p>
+                <div class="glass-card p-6 shadow-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800">Features of Our Agentic Universe:</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Inter-agent communication and collaboration</li>
+                        <li>Shared knowledge base and memory</li>
+                        <li>Continuous learning and improvement</li>
+                        <li>Adaptability to new domains and tasks</li>
+                        <li>Scalable architecture for adding new agents</li>
+                        <li>Specialized agents for every software domain</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-bold mb-8 text-center text-gradient">Get in Touch</h2>
+                <form class="max-w-lg mx-auto glass-card p-8 shadow-lg">
+                    <input type="text" placeholder="Name" class="w-full mb-4 p-3 rounded bg-white bg-opacity-70 text-gray-800 border border-gray-300">
+                    <input type="email" placeholder="Email" class="w-full mb-4 p-3 rounded bg-white bg-opacity-70 text-gray-800 border border-gray-300">
+                    <textarea placeholder="How can our AI agents assist you?" rows="4" class="w-full mb-4 p-3 rounded bg-white bg-opacity-70 text-gray-800 border border-gray-300"></textarea>
+                    <button type="submit" class="bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold py-3 px-6 rounded-full w-full transition-all transform hover:scale-105">Connect with NusterAI</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-100 py-6 text-center text-gray-600">
+        <p>&copy; 2024 NusterAI. Pioneering the future of AI with our Agentic Universe across all software domains.</p>
+    </footer>
+
+    <script>
+        gsap.registerPlugin(TextPlugin);
+
+        const phrases = [
+            "Pioneering the Agentic Universe",
+            "Revolutionizing AI Collaboration",
+            "Empowering Industries with AI",
+            "Next-Gen Autonomous Agents",
+            "AI Solutions for Every Domain"
+        ];
+        let currentPhraseIndex = 0;
+
+        function animateText() {
+            gsap.to("#changing-text", {
+                duration: 1,
+                text: phrases[currentPhraseIndex],
+                ease: "power1.inOut",
+                onComplete: () => {
+                    currentPhraseIndex = (currentPhraseIndex + 1) % phrases.length;
+                    setTimeout(animateText, 3000);
+                }
+            });
+        }
+
+        animateText();
+
+        gsap.to("#subtitle", {
+            duration: 1.5,
+            opacity: 1,
+            y: 0,
+            ease: "power3.out",
+            delay: 0.5
+        });
+    </script>
+</body>
+</html>
